@@ -10,7 +10,6 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.1.RELEASE</version>
-		<!-- <version>1.4.4.RELEASE</version> -->
 	</parent>
 
 	<properties>
@@ -19,6 +18,8 @@
 		<spring.cloud.version>Camden.SR5</spring.cloud.version>
 		<spring.boot.admin.version>1.4.6</spring.boot.admin.version>
 		<docker.maven.plugin.version>0.4.13</docker.maven.plugin.version>
+		<ice.version>3.6.3</ice.version>
+		<ant.ice.version>4.0.0</ant.ice.version>
 	</properties>
 
 	<dependencyManagement>
@@ -44,6 +45,16 @@
 				<groupId>de.codecentric</groupId>
 				<artifactId>spring-boot-admin-starter-client</artifactId>
 				<version>${spring.boot.admin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zeroc</groupId>
+				<artifactId>ice</artifactId>
+				<version>${ice.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zeroc</groupId>
+				<artifactId>ant-ice</artifactId>
+				<version>${ant.ice.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

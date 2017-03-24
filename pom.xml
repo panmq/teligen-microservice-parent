@@ -20,6 +20,7 @@
 		<docker.maven.plugin.version>0.4.13</docker.maven.plugin.version>
 		<ice.version>3.6.3</ice.version>
 		<ant.ice.version>4.0.0</ant.ice.version>
+		<wro4j.version>1.8.0</wro4j.version>
 	</properties>
 
 	<dependencyManagement>
@@ -66,6 +67,11 @@
 					<groupId>com.spotify</groupId>
 					<artifactId>docker-maven-plugin</artifactId>
 					<version>${docker.maven.plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>ro.isdc.wro4j</groupId>
+					<artifactId>wro4j-maven-plugin</artifactId>
+					<version>${wro4j.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
